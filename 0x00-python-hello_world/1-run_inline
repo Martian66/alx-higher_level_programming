@@ -1,2 +1,2 @@
 #!/bin/bash
-python_script.py $PYCODE
+echo $PYCODE | python3
