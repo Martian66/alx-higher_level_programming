@@ -4,8 +4,8 @@ def roman_to_int(roman_string):
         dictn = dict(I=1, V=5, X=10, L=50, C=100, D=500, M=1000)
         value = 0
         for a, x in zip(roman_string, roman_string[1:]):
-             if dictn[a] < dictn[x]:
-                 value -= dictn[a]
+            if dictn[a] < dictn[x]:
+                value -= dictn[a]
             else:
                 value += dictn[a]
         value += dictn[roman_string[-1]]
