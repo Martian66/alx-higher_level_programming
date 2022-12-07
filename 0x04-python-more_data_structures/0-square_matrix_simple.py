@@ -2,4 +2,4 @@
 
 def square_matrix_simple(matrix=[]):
     if matrix:
-        return [i ** 2 for i in matrix]
+        return [list(map(lamda k: j**2, i)) for i in matrix]
