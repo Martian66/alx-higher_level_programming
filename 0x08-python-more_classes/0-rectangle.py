@@ -2,6 +2,6 @@
 
 
 class Rectangle():
-     """a simple Rectangle class
+     """a simple empty rectangle class
      """
     pass
