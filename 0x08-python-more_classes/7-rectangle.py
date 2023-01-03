@@ -1,30 +1,31 @@
 #!/usr/bin/python3
 
-"""A class that defines a rectangle"""
+'''module: 7-rectangle
+this module contains the class Rectangle ...
+'''
 
 
 class Rectangle:
-    """this represents a rectangle"""
+    '''class: Rectangle
+    this is an empty class, further additions in subsequent assignments
+    '''
 
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initializing this rectangle class
-        Args:
-            width: represents the width of the rectangle
-            height: represents the height of the rectangle
-        Raises:
-            TypeError: if size is not integer
-            ValueError: if size is less than zero
-        """
+        '''method: __init__
+        initialize instance of class Rectangle
+        '''
         Rectangle.number_of_instances += 1
         self.__width = width
         self.__height = height
 
     @property
     def width(self):
-        """retrieves width attribute"""        
+        '''method: set_width
+        getter
+        '''
         if (not isinstance(self.__width, int)) or isinstance(self.__width,
                                                              bool):
             raise TypeError("width must be an integer")
@@ -34,7 +35,9 @@ class Rectangle:
 
     @width.setter
     def width(self, width):
-        """sets width attribute"""
+        '''method: set_width
+        setter
+        '''
         if not isinstance(self.__width, int) or isinstance(self.__width, bool):
             raise TypeError("width must be an integer")
         if self.__width < 0:
@@ -43,7 +46,9 @@ class Rectangle:
 
     @property
     def height(self):
-        """retrieves height attribute"""
+        '''method: set_height
+        getter
+        '''
         if (not isinstance(self.__height, int)) or isinstance(self.__height,
                                                               bool):
             raise TypeError("height must be an integer")
@@ -53,7 +58,9 @@ class Rectangle:
 
     @height.setter
     def height(self, height):
-        """sets height attribute"""
+        '''method: set_height
+        setter
+        '''
         if not isinstance(self.__height, int) or isinstance(self.__height,
                                                             bool):
             raise TypeError("height must be an integer")
@@ -62,17 +69,23 @@ class Rectangle:
         self.__height = height
 
     def area(self):
-        """returns area of rectangle"""
+        '''method: area
+        return area of rectangle
+        '''
         return self.__height * self.__width
 
     def perimeter(self):
-        """returns the perimeter of the rectangle"""
+        '''method: perimeter
+        return perimeter of perimeter
+        '''
         if self.__height == 0 or self.width == 0:
             return 0
         return (self.__height + self.width) * 2
 
     def __str__(self):
-        """presents a diagram of the rectangle defined for an object"""
+        '''method: __str__
+        return: nice string representation of rectangle
+        '''
         ret_str = ""
         if self.__height == 0 or self.__width == 0:
             return ""
@@ -83,12 +96,17 @@ class Rectangle:
         return ret_str
 
     def __repr__(self):
-        """returns a string representation of the rectangle"""
+        '''method: __repr__
+        return: representation of rectangle that can be used by eval() to
+                create new object
+        '''
         ret_str = "Rectangle(" + str(self.__width) + ","
         ret_str += str(self.__height) + ")"
         return ret_str
 
     def __del__(self):
-        """prints a message for every object that is deleted"""
+        '''method: __del__
+           deletes instance of Rectangle class, and prints "bye" message
+        '''
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
