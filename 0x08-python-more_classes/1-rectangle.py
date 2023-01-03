@@ -14,17 +14,12 @@ class Rectangle:
 
         @property
         def width(self):
-            """The width of the Rectangle which is an integer value bigger than 0
-
-            Raises:
-            TyperError: When the value passed to the setter is not an integer.
-            ValueError: When the value passed to the setter is less than or
-                        equal to zero.
-            """
+            """ getter for width property """
             return self.__width
 
         @width.setter
         def width(self, value):
+            """ setter for width property """
             if not isinstance(value, int):
                 raise TypeError('width must be an integer')
             elif value < 0:
@@ -34,20 +29,15 @@ class Rectangle:
 
         @property
         def height(self):
-            """The height of the Rectangle which is an integer value bigger than 0
-            
-            Raises:
-            TypeError:  When the value passed to the setter isn't an integer.
-            ValueError: When the value passed to the setter is less than or
-                        equal to zero.
-            """
+            """ getter for height property """
             return self.__height
 
         @height.setter
         def height(self, value):
+            """ setter for height property """
             if not isinstance(value, int):
                 raise TypeError('height must be an integer')
             elif value < 0:
                 raise ValueError('height must be >= 0')
             else:
-            self.__height = value     
+                self.__height = value
