@@ -34,7 +34,7 @@ class Rectangle:
         @property
         def height(self):
             """The height of the Rectangle which is an integer value bigger than 0
-            Raises:
+            
             Raises:
             TypeError:  When the value passed to the setter isn't an integer.
             ValueError: When the value passed to the setter is less than or
