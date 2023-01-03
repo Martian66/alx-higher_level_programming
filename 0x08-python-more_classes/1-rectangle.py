@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A rectangle with dimensions.
+A rectangle with width and height.
 """
 
 
