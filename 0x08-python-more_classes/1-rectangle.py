@@ -3,13 +3,14 @@
 A Rectangle with dimensions.
 """
 
+
 class Rectangle:
     """
     Rectangle functions and data
     """
 
     def __init__(self, width=0, height=0):
-        """ instantiation
+        """ Instantiation
         """
         self.width = width
         self.height = height
