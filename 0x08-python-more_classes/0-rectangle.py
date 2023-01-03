@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-class Rectangle:
-     """A simple Rectangle class"""
-
+class Rectangle():
+     """a simple Rectangle class
+     """
     pass
