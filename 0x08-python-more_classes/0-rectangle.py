@@ -2,6 +2,7 @@
 """Simple module that contains an empty class.
 """
 
+
 class Rectangle:
     """Empty class that defines a Rectangle"""
     pass
