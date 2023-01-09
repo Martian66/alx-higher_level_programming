@@ -2,7 +2,7 @@
 """Module for my list"""
 
 
-class Mylist(list):
+class MyList(list):
     """A class that inherits from list"""
     def print_sort(self):
         """prints a sorted list"""
