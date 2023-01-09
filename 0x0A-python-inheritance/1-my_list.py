@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 """
-my base class
+module for my lists
 """
-class Mylist():
+
+
+class Mylist(list):
+    """
+    returns my list in assorted order
+    """
 
     def print_sort(self):
         """
