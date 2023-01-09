@@ -21,4 +21,4 @@ def area(self):
 
 def __str__(self):
     """Returns the printed string value of a Rectangle"""
-    return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+    return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
