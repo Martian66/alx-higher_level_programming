@@ -8,6 +8,4 @@ class Mylist():
         """
         sorts values in ascending order
         """
-        sorted(self)
-
-        return self
+        print(sorted(self))
