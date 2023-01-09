@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 """
-module for my lists
+Module for my lists
 """
 
 
 class Mylist(list):
-    """
-    returns my list in assorted order
-    """
+    """Returns my list in assorted order"""
     def print_sort(self):
-        """
-        sorts values in ascending order
-        """
+        """Sorts values in ascending order"""
         print(sorted(self))
