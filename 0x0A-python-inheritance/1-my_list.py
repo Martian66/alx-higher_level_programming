@@ -8,7 +8,6 @@ class Mylist(list):
     """
     returns my list in assorted order
     """
-
     def print_sort(self):
         """
         sorts values in ascending order
