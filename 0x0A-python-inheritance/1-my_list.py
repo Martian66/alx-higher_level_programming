@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-Module for my lists
-"""
+"""Module for my list"""
 
 
 class Mylist(list):
-    """Returns my list in assorted order"""
+    """A class that inherits from list"""
     def print_sort(self):
-        """Sorts values in ascending order"""
+        """prints a sorted list"""
         print(sorted(self))
