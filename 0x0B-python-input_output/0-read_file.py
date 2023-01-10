@@ -3,6 +3,6 @@
 
 
 def read_file(filename=""):
-    """Prints a textfile(UTF-8) to stdout"""
-    with open(filename, "r", enconding="utf-8") as f:
+    """Prints a UTF-8 text file to stdout"""
+    with open(filename, encoding="utf-8") as f:
         print(f.read(), end="")
