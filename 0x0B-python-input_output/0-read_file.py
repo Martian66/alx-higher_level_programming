@@ -3,6 +3,6 @@
 
 
 def read_file(filename=""):
-    """File opened in text mode allowing for accessibility"""
+    """Prints a textfile(UTF-8) to stdout"""
     with open(filename, "r", enconding="utf-8") as f:
         print(f.read(), end="")
