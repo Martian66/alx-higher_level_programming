@@ -1,7 +1,6 @@
 ## 0x0C. Python - Almost a circle
 This project attempts to cover the implementation of Unit Testing.
 
-![This is an image](https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1588353328/unit9_ys353w.png)
 
 ## What is Unit Testing?
 In simple terms its the process of isolating small units/portions of code and running predefined test on them to ensure
