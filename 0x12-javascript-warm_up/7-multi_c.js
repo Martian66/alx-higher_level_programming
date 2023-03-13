@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// A script that prints x times “C is fun”
+// A script that prints x times, C is fun
 
 const myString = 'C is fun';
 
