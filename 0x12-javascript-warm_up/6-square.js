@@ -1,9 +1,14 @@
 #!/usr/bin/node
 
-const SquareBase = require('./5-square');
+const SquarePar =require('./5-square.js');
 
-module.exports = class Square extends SquareBase {
+module.exports = class Square extends SquarePar {
   charPrint (c) {
-    super.print(c);
-  }
+    if (!c) {
+      c = 'X';
+    }
+    for (let i = 0; < this.height; i++) {
+      console.log(c.repeat(this.width));
+     }
+   }
 };
