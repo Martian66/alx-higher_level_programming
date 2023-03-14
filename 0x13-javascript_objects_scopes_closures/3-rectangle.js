@@ -5,7 +5,16 @@ module.exports = class Rectangle {
     if (Number.isFinite(w) && Number.isFinite(h) && w > 0 && h > 0) {
       this.width = w;
       this.height = h;
-      this.print = () => Array.from({ length: h }, () => 'X'.repeat(w)).join('\n');
+    }
+  }
+
+  print() {
+    if (this.width && this.height) {
+      for (let i = 0; i < this.height; i++) {
+        console.log('X'.repeat(this.width));
+      }
+    } else {
+      console.log('Rectangle dimensions not set');
     }
   }
 };
