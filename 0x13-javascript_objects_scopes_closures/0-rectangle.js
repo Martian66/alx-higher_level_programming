@@ -1,7 +1,6 @@
 #!/usr/bin/node
 // An empty class Rectangle that defines a rectangle
-class Rectangle {
+export default class Rectangle {
   constructor() {
   }
 }
-exports.Rectangle = Rectangle;
