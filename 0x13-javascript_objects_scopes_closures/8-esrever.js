@@ -3,8 +3,8 @@
 
 exports.esrever = function (list) {
   let reversedList = [];
-  for (let i = list.length - 1; i >= 0; i--) {
-    reversedList.push(list[i]);
+  while (list.length) {
+    reversedList.push(list.pop());
   }
   return reversedList;
 };
