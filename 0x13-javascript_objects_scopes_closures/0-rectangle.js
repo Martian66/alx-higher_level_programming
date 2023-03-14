@@ -4,3 +4,4 @@ class Rectangle {
   constructor() {
   }
 }
+exports.Rectangle = Rectangle;
