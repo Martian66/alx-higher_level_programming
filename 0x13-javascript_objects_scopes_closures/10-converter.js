@@ -2,6 +2,6 @@
 // A function that converts a number from base 10 to another base passed as argument
 exports.converter = function(base) {
   return function(num) {
-    return num > 0 ? exports.converter(base)(Math.floor(num/base)) + (num % base) : '';
-  }
+    return num.toString(base);
+  };
 };
