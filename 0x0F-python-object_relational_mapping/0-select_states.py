@@ -9,7 +9,7 @@ if __name__ == '__main__':
     """
      Access point to the database
     """
-    db = MySQLdb.connect(host="localhost", user=sys.rgv[1], port=3306,
+    db = MySQLdb.connect(host="localhost", user=sys.argv[1], port=3306,
                          passwd=sys.argv[2], db=sys.argv[3])
 
     mycursor = db.cursor()
