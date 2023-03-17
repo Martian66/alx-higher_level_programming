@@ -5,28 +5,21 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
+    """
+    Access point to the database
+    """
 
-    mysql_user = sys.argv[1]
-    mysql_pasword = sys.argv[2]
-    database_name = sys.argv[3]
-
-# establish database connection
-mydb = MySQLdb.connect(
+    mydb = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=mysql_user,
-        passwd=mysql_password,
-        db=database_name
-)
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3]
+    )
 
 # cursor object
 mycursor = mydb.cursor()
-
-sql = "SELECT name FROM states ORDER BY id ASC"
-
-# execute sql query
-mycursor.execute(sql)
-
+mycursor.execute("SELECT * FROM states")
 results = mycursor.fetchall()
 
 # print each state name
