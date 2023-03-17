@@ -9,8 +9,8 @@ if __name__ == '__main__':
     """
      Access point to the database
     """
-    db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-                         passwd=argv[2], db=argv[3])
+    db = MySQLdb.connect(host="localhost", user=sys.rgv[1], port=3306,
+                         passwd=sys.argv[2], db=sys.argv[3])
 
     mycursor = db.cursor()
     mycursor.execute("SELECT * FROM `states`")
