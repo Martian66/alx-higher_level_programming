@@ -15,7 +15,7 @@ if __name__ == '__main__':
     mycursor = db.cursor()
     mycursor.execute("SELECT * FROM states \
                      WHERE name LIKE BINARY '{}' \
-                     ORDER BY states.id ASC".format(argv[4]))
+                     ORDER BY states.id ASC".format(sys.argv[4]))
     rows = mycursor.fetchall()
 
     for row in rows:
