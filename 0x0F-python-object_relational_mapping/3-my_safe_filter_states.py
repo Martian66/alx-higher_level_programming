@@ -27,5 +27,6 @@ if __name__ == '__main__':
         })
     rows = mycursor.fetchall()
 
-    for row in rows:
-        print(row)
+    if row is not None:
+        for row in rows:
+            print(row)
