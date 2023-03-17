@@ -23,7 +23,7 @@ if __name__ == '__main__':
             ORDER BY
                 states.id ASC
         """, {
-            'name': argv[4]
+            'name': sys.argv[4]
         })
     rows = mycursor.fetchall()
 
