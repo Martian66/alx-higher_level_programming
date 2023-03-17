@@ -9,19 +9,19 @@ if __name__ == "__main__":
     Access point to the database
     """
 
-    mydb = MySQLdb.connect(
+    db = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=argv[1],
-        passwd=argv[2],
-        db=argv[3]
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3]
     )
 
 # cursor object
-mycursor = mydb.cursor()
-mycursor.execute("SELECT * FROM states")
+mycursor = db.cursor()
+mycursor.execute("SELECT * FROM `states`")
 results = mycursor.fetchall()
 
 # print each state name
 for state in results:
-    print(state[0])
+    print(state)
