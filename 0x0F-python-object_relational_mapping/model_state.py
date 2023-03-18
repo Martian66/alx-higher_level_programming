@@ -9,6 +9,14 @@ Base = declarative_base()
 
 
 class State(Base):
+    """State class
+
+    Attributes:
+    __tablename__(str): the name of table class
+    id (int): The state's id
+    name (str): the state name of the class
+
+    """
 
     __tablename__ = 'states'
 
