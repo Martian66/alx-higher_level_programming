@@ -5,8 +5,6 @@ a Base class that can be used to interact with a MySQL database """
 from model_state import Base, State
 from sqlalchemy import Column, Integer, String, ForeignKey
 
-Base = declarative_base()
-
 
 class City(Base):
     """City class
