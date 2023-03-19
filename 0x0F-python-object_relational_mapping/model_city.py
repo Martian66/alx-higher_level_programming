@@ -2,8 +2,8 @@
 """ This script uses ORM to define a City class and
 a Base class that can be used to interact with a MySQL database """
 
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+from model_state import Base, State
+from sqlalchemy import Column, Integer, String, ForeignKey
 
 Base = declarative_base()
 
