@@ -27,3 +27,4 @@ if __name__ == "__main__":
         print("{}: ({:d}) {}".format(_s.name, _c.id, _c.name))
 
         session.commit()
+        session.close()
