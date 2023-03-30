@@ -10,18 +10,16 @@ def find_peak(lst):
     Returns:
         int: The peak element in the list.
     """
-    length = len(lst)
-    if length == 0:
-        return None
-    if length == 1:
-        return lst[0]
-    if length == 2:
-        return lst[0] if lst[0] >= lst[1] else lst[1]
+    size = len(lst)
 
-    mid = length // 2
-    if lst[mid] < lst[mid-1]:
-        return find_peak(lst[:mid])
-    elif lst[mid] < lst[mid+1]:
-        return find_peak(lst[mid+1:])
-    else:
-        return lst[mid]
+    if size == 0:
+        return None
+
+    left, right = 0, size - 1
+    while left < right:
+        mid = (left + right) // 2
+        if lst[mid] < lst[mid + 1]:
+            left = mid + 1
+        else:
+            right = mid
+    return lst[left]
