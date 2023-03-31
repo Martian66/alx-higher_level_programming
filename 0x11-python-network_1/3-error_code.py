@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python3
 # script that takes in a URL and then decodes in utf-8
 import sys
 from urllib import request, error
