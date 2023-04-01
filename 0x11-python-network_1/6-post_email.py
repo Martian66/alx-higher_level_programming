@@ -3,8 +3,8 @@
 import requests
 import sys
 
-url = 'hr@holbertonschool.com'
-email = sys.argv[1]
+url = sys.argv[1]
+email = sys.argv[2]
 
 print("Your email is:", email)
 
