@@ -3,8 +3,9 @@
 import requests
 import sys
 
-url = sys.argv[1]
-email = sys.argv[2]
+url = input("Enter the URL: ")
+
+email = sys.argv[1]
 
 print("Your email is:", email)
 
