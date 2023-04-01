@@ -13,6 +13,6 @@ if __name__ == "__main__":
         if 'id' in data and 'name' in data:
             print("[{}] {}".format(data['id'], data['name']))
         else:
-            print("No result")
+            print("Unexpected response: {}".format(data))
     except ValueError:
         print("Not a valid JSON")
