@@ -3,8 +3,7 @@
 import requests
 import sys
 
-url = input("Enter the URL: ")
-
+url = 'hr@holbertonschool.com'
 email = sys.argv[1]
 
 print("Your email is:", email)
