@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 # script that takes in a URL and then decodes in utf-8
-from urllib.request
-from urllib.error
 import sys
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 
-url = sys.argv[1]
 
-try:
-    with urllib.request.urlopen(url) as response:
-        body = response.read().decode('utf-8')
-        print(body)
-except urllib.error.HTTPError as e:
-    print("Error code: {}".format(e.code))
+if __name__ == "__main__":
+    url = sys.argv[1]
+    req = Request(url)
+
+    try:
+        with urlopen(req) as response:
+            print(response.read().decode('utf-8'))
+    except HTTPError as e:
+        print("Error code: {}".format(e.code))
