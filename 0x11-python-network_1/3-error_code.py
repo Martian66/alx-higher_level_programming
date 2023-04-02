@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-# script that takes in a URL and then decodes in utf-8
+"""
+This Python script  takes in a URL and then decodes in utf-8
+it manage urllib.error.HTTPError exceptions and print: Error code
+"""
 
 import sys
 import urllib.request
