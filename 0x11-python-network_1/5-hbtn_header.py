@@ -8,9 +8,5 @@ import request
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    response = response.get(url)
-    x_request_id = response.headers.get('X-Request-Id')
-    if x_request_id:
-        print("X-Request-Id: {}".format(x_request_id))
-    else:
-        print("X-Request-Id header not found in response")
+    response = request.get(url)
+    print(response.headers.get("X-Request-Id"))
